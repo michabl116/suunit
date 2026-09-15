@@ -20,13 +20,16 @@ public class GameUser {
 
     }
     public  void fight(){
+
         currentLevel.fight();
     }
     public String getUsername() {
+
         return username;
     }
 
     public int getExperience() {
+
         return experience;
     }
     public void setExperience(int experience) {
