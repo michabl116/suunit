@@ -14,4 +14,36 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!-- Agrupamos todas las dependencias aquí -->
+    <dependencies>
+        <!-- Módulo básico para los controles visuales -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>21.0.1</version>
+        </dependency>
+
+        <!-- Módulo opcional pero recomendado: necesario si vas a usar archivos visuales .fxml -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>21.0.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Plugin oficial de JavaFX para compilar y lanzar la aplicación de forma simple -->
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <!-- Reemplaza esto con el paquete y la clase que contenga tu método main -->
+                    <mainClass>org.example.App</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
