@@ -8,8 +8,8 @@ public class Main {
         User alice = new User("alice");
         User bob = new User("bob");
 
-        Document publicDoc = new Document("doc1", "2025-09-26", "Public info");
-        Document secretDoc = new Document("doc2", "2025-09-26", "Top secret");
+        Document publicDoc = new Document("doc1", "2026-10-27", "Public info");
+        Document secretDoc = new Document("doc2", "2026-10-27", "Top secret");
 
         DocumentInt proxy1 = new DocumentProxy(publicDoc, false);
         DocumentInt proxy2 = new DocumentProxy(secretDoc, true);
