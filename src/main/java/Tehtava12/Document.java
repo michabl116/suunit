@@ -13,6 +13,7 @@ public class Document implements DocumentInt {
     }
 
     public String getId() {
+
         return id;
     }
 
