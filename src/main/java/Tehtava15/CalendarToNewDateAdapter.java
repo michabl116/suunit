@@ -5,6 +5,7 @@ public class CalendarToNewDateAdapter implements NewDateInterface {
     private Calendar calendar;
 
     public CalendarToNewDateAdapter() {
+
         calendar = Calendar.getInstance();
     }
 
@@ -15,11 +16,13 @@ public class CalendarToNewDateAdapter implements NewDateInterface {
 
     @Override
     public void setMonth(int month) {
+
         calendar.set(Calendar.MONTH, month - 1); // Calendar uses 0-based months
     }
 
     @Override
     public void setYear(int year) {
+
         calendar.set(Calendar.YEAR, year);
     }
 
@@ -30,21 +33,25 @@ public class CalendarToNewDateAdapter implements NewDateInterface {
 
     @Override
     public int getMonth() {
+
         return calendar.get(Calendar.MONTH) + 1; // Convert to 1-based
     }
 
     @Override
     public int getYear() {
+
         return calendar.get(Calendar.YEAR);
     }
 
     @Override
     public void advanceDays(int days) {
+
         calendar.add(Calendar.DAY_OF_MONTH, days);
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return String.format("Date: %02d/%02d/%d", getDay(), getMonth(), getYear());
     }
 }

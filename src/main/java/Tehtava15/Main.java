@@ -5,8 +5,8 @@ public class Main {
         NewDateInterface date = new CalendarToNewDateAdapter();
 
         // Set initial date
-        date.setYear(2025);
-        date.setMonth(10); // October
+        date.setYear(2026);
+        date.setMonth(11); // October
         date.setDay(9);
 
         System.out.println("Initial Date: " + date);
